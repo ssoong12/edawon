@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDAWON</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">EDAWON<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="gnb">
+            <li class="on"><a href="#banner">Home</a>
+            <ul>
+                <li class="hidden"><a href="#">EDAWON</a></li>
+                    <li class="hidden"><a href="#">경영자 인사말</a></li>
+                    <li class="hidden"><a href="#">경영 철학</a></li>
+                    <li class="hidden"><a href="#">회사 연혁</a></li>
+                    <li class="hidden"><a href="#">제휴 문의</a></li>
+                </ul>
+            </li>
+            <li><a href="#best">Best</a>
+                <ul class="hidden">
+                    <li class="hidden"><a href="#">BEST 10</a></li>
+                    <li class="hidden"><a href="#">Edawon 자체 제작</a></li>
+                </ul>
+            </li>
+            <li><a href="#menu">Menu</a>
+                <ul class="hidden">
+                    <li class="hidden"><a href="#">커피 원두</a></li>
+                    <li class="hidden"><a href="#">녹차/우롱차/보이차</a></li>
+                    <li class="hidden"><a href="#">홍차/한방차</a></li>
+                    <li class="hidden"><a href="#">가향차/얼그레이</a></li>
+                    <li class="hidden"><a href="#">허브차/과일차</a></li>
+                </ul>
+            </li>
+            <li><a href="#expert">Expert</a>
+                <ul class="hidden">
+                    <li class="hidden"><a href="#">공장 설비</a></li>
+                    <li class="hidden"><a href="#">로스팅 & 블렌딩</a></li>
+                    <li class="hidden"><a href="#">블렌드 콘셉트</a></li>
+                    <li class="hidden"><a href="#">상품별 대표 맛과 향</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a>
+                <ul class="hidden">
+                    <li class="hidden"><a href="#">공지사항</a></li>
+                    <li class="hidden"><a href="#">제품 후기</a></li>
+                    <li class="hidden"><a href="#">Q&A</a></li>
+                    <li class="hidden"><a href="#">1:1 고객센터</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    </div>
+    <main>
+        <section class="banner scroll" id="banner">
+            <div class="content">
+                <h2>Always Choose Edawon</h2>
+                <p>차와 관련해서는 현재 세계적으로 인기있는 10여개 브랜드 상품들을 온라인 쇼핑몰을 통해서 가장 경쟁력 있는 가격과 최상의 서비스로 판매하고 있습니다. 커피는 전세계 10여개 싱글오리진 커피들을 직접 블렌딩하고 로스팅하여 판매합니다.
+                </p>
+                <a href="#" class="btn">Our Menu</a>
+            </div>
+        </section>
+        <section id="best" class="best scroll">
+            <div class="circle"></div>
+            <article class="contentt">
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <span>Edawon Coffee</span></h2>
+                    <p>차와  관련해서는  현재  세계적으로  인기있는  10여개  브랜드  상품들을  온라인  쇼핑몰을  통해서  가장  경쟁력  있는  가격과  최상 의  서비스로  판매하고  있습니다. 커피는  전세계  10여개  싱글오리진  커피들을  직접  블렌딩하고  로스팅하여  판매합니다. 이다원이라는 이름이 500년 후에도 기억되기를 꿈꾸며, 많은 고객들과 차를 통해서 좋은 감정들을 공감할 수 있기를 꿈꿉니다.</p>
+                    <a href="index.html">View More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/product1.png" alt="녹차" class="greenTea">
+                </div>
+            </article>
+            <ul class="thumb">
+                <li><img src="images/product1.png" alt="녹차" onclick="imgSlider('images/product1.png');changeCircleColor('#68ac02')"></li>
+                <li><img src="images/product2.png" alt="블랙티" onclick="imgSlider('images/product2.png');changeCircleColor('#908ab2')"></li>
+                <li><img src="images/product3.png" alt="동백꽃차" onclick="imgSlider('images/product3.png');changeCircleColor('#de8883')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="https://www.youtube.com/channel/UCp3JfJZpzZfOKKX4x9ENJOg"><img src="images/youtube.png" alt="youtubelogo"></a></li>
+                <li><a href="https://www.instagram.com/edawoncokr/"><img src="images/instargram.png" alt="instargramlogo"></a></li>
+                <li><a href="https://blog.naver.com/NBlogTop.naver?isHttpsRedirect=true&blogId=edawoncokr"><img src="images/blog.png" alt="bloglogo"></a></li>
+            </ul>
+        </section>
+        <section class="menu scroll" id="menu">
+            <div class="title">
+                <h2 class="titleText">Our<span>M</span>enu</h2>
+                <p>콜롬비아, 브라질, 에티오피아, 케냐, 과테말라, 인도네시아 등으로부터 수입된 생두들을 직접 로스팅하고, 3~4종의 블렌딩 된 원두들도 같이 판매하고 있습니다.
+                </p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/menu1.png" alt="녹차">
+                    </div>
+                    <div class="text">
+                        <h3>Special Green Tea</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/menu2.png" alt="동백티">
+                    </div>
+                    <div class="text">
+                        <h3>Special Jeju flower Tea</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/menu3.png" alt="블랙티">
+                    </div>
+                    <div class="text">
+                        <h3>Tropical Black Tea</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/menu4.jpg" alt="딥웨이브 블렌드 커피">
+                    </div>
+                    <div class="text">
+                        <h3>Deep Wave Blend Coffee</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/menu5.jpg" alt="잉글리쉬블랙퍼스트티">
+                    </div>
+                    <div class="text">
+                        <h3>English Breakfast Tea</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/menu6.jpg" alt="얼그레이티">
+                    </div>
+                    <div class="text">
+                        <h3>Earl Grey Tea</h3>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#" class="btn">View All</a>
+                </div>
+            </div>
+        </section>
+        <section class="expert scroll" id="expert">
+            <div class="title">
+                <h2 class="titleText">Our Coffee <span>E</span>xpert</h2>
+                <p>콜롬비아, 브라질, 에티오피아, 케냐, 과테말라, 인도네시아 등으로부터 수입된 생두들을 직접 로스팅하고, 3~4종의 블렌딩 된 원두들도 같이 판매하고 있습니다.</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="text">
+                        <h3>파나마 게이샤 커피 원두 200g</h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee1.jpg" alt="파나마 게이샤 커피 원두 200g">
+                        </div>
+                        <div class="backBx">
+                            <p>커핑노트: 자스민, 레몬밤, 복숭아</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>예멘 모카 마타리 커피 원두 200g </h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee2.jpg" alt="예멘 모카 마타리 커피 원두 200g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>케냐 AA 오타야 커피 원두 500g</h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee3.jpg" alt="케냐 AA 오타야 커피 원두 500g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>에티오피아 예가체프 아리차 커피 원두 500g</h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee4.jpg" alt="에티오피아 예가체프 아리차 커피 원두 500g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>에티오피아 구지 함벨라 커피 원두 200g</h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee5.jpg" alt="에티오피아 구지 함벨라 커피 원두 200g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>시그니처 블렌드 커피 원두 200g</h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee6.jpg" alt="시그니처 블렌드 커피 원두 200g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>콜롬비아 카우카 수프리모 커피 원두 500g </h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee7.jpg" alt="콜롬비아 카우카 수프리모 커피 원두 500g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h3>자메이카 블루마운틴 커피 원두 200g</h3>
+                    </div>
+                    <div class="imgAct">
+                        <div class="imgBx">
+                            <img src="images/coffee8.jpg" alt="자메이카 블루마운틴 커피 원두 200g">
+                        </div>
+                        <div class="backBx">
+                            <p>산미 가득하지만 고소한 맛</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials scroll">
+            <div class="title white">
+                <h2 class="titleText">They <span>S</span>aid About Us</h2>
+                <p>고객들의 소중한 제품 구매 후기입니다.</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <div class="productBx">
+                        <img src="images/user1.jpg">
+                    </div>
+                    <div class="text">
+                        <p>"묵직한 향에 비해 부드럽고 단맛이 살짝 있어요. 산미는 전혀 없고 쓴맛도 적어서 부담없이 즐길 수 있는 맛난 커피입니다. 세상 고소한 원두 재구매각"</p>
+                        <h3>이다원 아날로그 블렌드 커피 원두 5kg</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <div class="productBx">
+                        <img src="images/user2.jpg">
+                    </div>
+                    <div class="text">
+                        <p>"출근해서 한잔씩 먹는데 너무 좋네요 근데 생각보다 풀향이 많이나요"</p>
+                        <h3>Twinings 페퍼민트차 25티백</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <div class="productBx">
+                        <img src="images/user3.png">
+                    </div>
+                    <div class="text">
+                        <p>"저렴하게잘샀습니다! 정말 향긋해요 다 마시면 또 살래요"</p>
+                        <h3>오설록 산호섬 아이스티 20입</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact scroll" id="contact">
+            <div class="title">
+                <h2 class="titleText"><span>C</span>ontact Us</h2>
+                <p>고객님의 소중한 의견을 귀담아 듣겠습니다.</p>
+            </div>
+            <div class="contactForm">
+                <h3>Send Message</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="Epilogue"></textarea>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="copyrightText">
+            <p>고객센터 운영시간: 평일 오전10시 ~ 오후6시 | 입금계좌: 국민은행 353901-01-255148 신현주(이다원)</p>
+            <address>경기도 용인시 기흥구 구성로279번길 21, 전화: 031-266-0280, 팩스: 031-266-0286</address>
+            <small>Copyright 2021 <a href="https://www.instagram.com/xxseunghyun/">Seunghyun Lee</a>. All Right Reserved</small>
+        </div>
+        <div class="top">
+            <button class="topBtn"><a href="#banner">top</a></button>
+        </div>
+    </footer>
+</body>
+</html>
